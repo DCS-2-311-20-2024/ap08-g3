@@ -52,7 +52,7 @@ export function init(scene, size, id, offset, texture) {
         const height = [2, 2, 7, 4, 5];
         const bldgH = height[type] * 5;
         const geometry = new THREE.BoxGeometry(8, bldgH, 8);
-        const material = new THREE.MeshLambertMaterial();
+        const material = new THREE.MeshLambertMaterial({map: texture});
         const sideUVs = (type * 2 + 1) / 11;
         const sideUvE = (type * 2 + 2) / 11;
         const topUvS = (type * 2 + 2) / 11;
@@ -68,7 +68,7 @@ export function init(scene, size, id, offset, texture) {
             }
         }
         const bldg = new THREE.Mesh(geometry, material);
-        bldg.position.set(x, bldgH / 2, z);
+        bldg.position.set(x, bldgH, z);
         scene.add(bldg);
     }
 
