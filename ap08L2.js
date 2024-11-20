@@ -108,7 +108,7 @@ points.forEach((point) => {
 // コース(自動運転用)
 export function makeCourse(scene) {
     const courseVectors = [];
-    const parts = [L2, L1, L3, L4];
+    const parts = [L2, L3, L4, L1];
     parts.forEach((part) => {
         part.controlPoints.forEach((p) => {
             courseVectors.push(
