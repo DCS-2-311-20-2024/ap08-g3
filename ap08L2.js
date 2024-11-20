@@ -82,8 +82,7 @@ course = new THREE.CatmullRomCurve3(
             0,
             offset.z + p[1]
         );
-    }),
-    false
+    }), false
 );
 
 // 曲線から100箇所を取り出し円を並べる
