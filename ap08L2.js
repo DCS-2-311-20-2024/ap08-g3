@@ -19,8 +19,8 @@ let course;
 export const origin = new THREE.Vector3();
 export const controlPoints = [
     [ 50,-20],
-    [6, 0],
-    [-20, 20],
+    [15, 5],
+    [-15, 20],
     [-25, 40]
 ]
 export function init(scene, size, id, offset, texture) {
@@ -72,7 +72,7 @@ export function init(scene, size, id, offset, texture) {
         scene.add(bldg);
     }
 
-    makeBuilding(20,20,0);
+    makeBuilding(0,5,0);
    // コース(描画)
 // 制御点を補間して曲線を作る
 course = new THREE.CatmullRomCurve3(
