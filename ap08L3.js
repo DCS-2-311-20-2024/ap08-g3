@@ -66,7 +66,8 @@ export function init(scene, size, id, offset, texture) {
             } else {
                  uvs.array[i] = topUvS;
                  uvs.array[i + 2] = topUvE;
-    }
+            }
+        }
         const bldg = new THREE.Mesh(
             geometry,
             material
